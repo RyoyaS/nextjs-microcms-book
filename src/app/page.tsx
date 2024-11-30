@@ -1,3 +1,4 @@
+import ButtonLink from "./components/ButtonLink";
 import styles from "./page.module.css";
 import Image from "next/image";
 
@@ -99,6 +100,9 @@ export default function Home() {
                         );
                     })}
                 </ul>
+                <div className={styles.newsLink}>
+                    <ButtonLink href="/news">もっとみる</ButtonLink>
+                </div>
             </section>
         </div>
     );
