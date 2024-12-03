@@ -1,3 +1,4 @@
+import Link from "next/link";
 import style from "./index.module.css";
 
 type Props = {
@@ -7,8 +8,8 @@ type Props = {
 
 export default function ButtonLink({href,children}: Props) {
     return (
-        <a href={href} className={style.button}>
+        <Link href={href} className={style.button}>
             {children}
-        </a>
+        </Link>
     );
 }
