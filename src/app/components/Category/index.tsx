@@ -1,10 +1,10 @@
-import type { Category } from "@/app/libs/microcms";
-import styles from "./index.module.css";
+import type { Category } from '@/app/libs/microcms'
+import styles from './index.module.css'
 
 type Props = {
-  category: Category;
-};
+  category: Category
+}
 
 export default function Category({ category }: Props) {
-  return <span className={styles.tag}>{category.name}</span>;
+  return <span className={styles.tag}>{category.name}</span>
 }
